@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC1EC51AE6AB1D021105C9F7 /* Pods_WebtoonShorts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DED934F7F2D3543D0C96AB /* Pods_WebtoonShorts.framework */; };
+		EA8DAE0426E2891C00B6ACD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0326E2891C00B6ACD5 /* AppDelegate.swift */; };
+		EA8DAE0626E2891C00B6ACD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0526E2891C00B6ACD5 /* SceneDelegate.swift */; };
+		EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */; };
+		EA8DAE0D26E2891D00B6ACD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8DAE0C26E2891D00B6ACD5 /* Assets.xcassets */; };
+		EA8DAE1026E2891D00B6ACD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8DAE0E26E2891D00B6ACD5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D7686ACED4DCC3144E8C2CE /* Pods-WebtoonShorts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebtoonShorts.release.xcconfig"; path = "Target Support Files/Pods-WebtoonShorts/Pods-WebtoonShorts.release.xcconfig"; sourceTree = "<group>"; };
+		48DED934F7F2D3543D0C96AB /* Pods_WebtoonShorts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebtoonShorts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6DF6BCD222F057829D9F99 /* Pods-WebtoonShorts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebtoonShorts.debug.xcconfig"; path = "Target Support Files/Pods-WebtoonShorts/Pods-WebtoonShorts.debug.xcconfig"; sourceTree = "<group>"; };
+		EA8DAE0026E2891C00B6ACD5 /* WebtoonShorts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebtoonShorts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8DAE0326E2891C00B6ACD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA8DAE0526E2891C00B6ACD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA8DAE0C26E2891D00B6ACD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA8DAE0F26E2891D00B6ACD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA8DAE1126E2891D00B6ACD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA8DADFD26E2891C00B6ACD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1EC51AE6AB1D021105C9F7 /* Pods_WebtoonShorts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		780A881503764A3D4B4465D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC6DF6BCD222F057829D9F99 /* Pods-WebtoonShorts.debug.xcconfig */,
+				1D7686ACED4DCC3144E8C2CE /* Pods-WebtoonShorts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DDC178640B30CDB57536E167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48DED934F7F2D3543D0C96AB /* Pods_WebtoonShorts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA8DADF726E2891C00B6ACD5 = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE0226E2891C00B6ACD5 /* WebtoonShorts */,
+				EA8DAE0126E2891C00B6ACD5 /* Products */,
+				780A881503764A3D4B4465D5 /* Pods */,
+				DDC178640B30CDB57536E167 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA8DAE0126E2891C00B6ACD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE0026E2891C00B6ACD5 /* WebtoonShorts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA8DAE0226E2891C00B6ACD5 /* WebtoonShorts */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE1726E28A3800B6ACD5 /* Application */,
+				EA8DAE1826E28A4600B6ACD5 /* Resources */,
+				EA8DAE1926E28A5D00B6ACD5 /* Scenes */,
+				EA8DAE1A26E28A6800B6ACD5 /* ViewModels */,
+				EA8DAE1B26E28A7000B6ACD5 /* Models */,
+				EA8DAE1C26E28A7500B6ACD5 /* Core */,
+			);
+			path = WebtoonShorts;
+			sourceTree = "<group>";
+		};
+		EA8DAE1726E28A3800B6ACD5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE1126E2891D00B6ACD5 /* Info.plist */,
+				EA8DAE0326E2891C00B6ACD5 /* AppDelegate.swift */,
+				EA8DAE0526E2891C00B6ACD5 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EA8DAE1826E28A4600B6ACD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE0C26E2891D00B6ACD5 /* Assets.xcassets */,
+				EA8DAE0E26E2891D00B6ACD5 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA8DAE1926E28A5D00B6ACD5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EA8DAE1A26E28A6800B6ACD5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EA8DAE1B26E28A7000B6ACD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA8DAE1C26E28A7500B6ACD5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA8DADFF26E2891C00B6ACD5 /* WebtoonShorts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8DAE1426E2891D00B6ACD5 /* Build configuration list for PBXNativeTarget "WebtoonShorts" */;
+			buildPhases = (
+				BF4AB138C267F4631D7DFD56 /* [CP] Check Pods Manifest.lock */,
+				EA8DADFC26E2891C00B6ACD5 /* Sources */,
+				EA8DADFD26E2891C00B6ACD5 /* Frameworks */,
+				EA8DADFE26E2891C00B6ACD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebtoonShorts;
+			productName = WebtoonShorts;
+			productReference = EA8DAE0026E2891C00B6ACD5 /* WebtoonShorts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA8DADF826E2891C00B6ACD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EA8DADFF26E2891C00B6ACD5 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = EA8DADFB26E2891C00B6ACD5 /* Build configuration list for PBXProject "WebtoonShorts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA8DADF726E2891C00B6ACD5;
+			productRefGroup = EA8DAE0126E2891C00B6ACD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA8DADFF26E2891C00B6ACD5 /* WebtoonShorts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA8DADFE26E2891C00B6ACD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8DAE1026E2891D00B6ACD5 /* LaunchScreen.storyboard in Resources */,
+				EA8DAE0D26E2891D00B6ACD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF4AB138C267F4631D7DFD56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebtoonShorts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA8DADFC26E2891C00B6ACD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */,
+				EA8DAE0426E2891C00B6ACD5 /* AppDelegate.swift in Sources */,
+				EA8DAE0626E2891C00B6ACD5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA8DAE0E26E2891D00B6ACD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA8DAE0F26E2891D00B6ACD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA8DAE1226E2891D00B6ACD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA8DAE1326E2891D00B6ACD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA8DAE1526E2891D00B6ACD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6DF6BCD222F057829D9F99 /* Pods-WebtoonShorts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92NGUT4BRA;
+				INFOPLIST_FILE = WebtoonShorts/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.byunghak.WebtoonShorts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EA8DAE1626E2891D00B6ACD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7686ACED4DCC3144E8C2CE /* Pods-WebtoonShorts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92NGUT4BRA;
+				INFOPLIST_FILE = WebtoonShorts/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.byunghak.WebtoonShorts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA8DADFB26E2891C00B6ACD5 /* Build configuration list for PBXProject "WebtoonShorts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8DAE1226E2891D00B6ACD5 /* Debug */,
+				EA8DAE1326E2891D00B6ACD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8DAE1426E2891D00B6ACD5 /* Build configuration list for PBXNativeTarget "WebtoonShorts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8DAE1526E2891D00B6ACD5 /* Debug */,
+				EA8DAE1626E2891D00B6ACD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA8DADF826E2891C00B6ACD5 /* Project object */;
+}
