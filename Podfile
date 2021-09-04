@@ -7,4 +7,6 @@ target 'WebtoonShorts' do
 
   # Pods for WebtoonShorts
 
+  pod 'SnapKit'
+
 end
