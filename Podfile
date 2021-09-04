@@ -7,6 +7,11 @@ target 'WebtoonShorts' do
 
   # Pods for WebtoonShorts
 
-  pod 'SnapKit'
+  # Rx
+  pod 'RxSwift'
+  pod 'RxGesture'
+
+  # UI
+  pod 'SnapKit', '>=5.0.1'
 
 end

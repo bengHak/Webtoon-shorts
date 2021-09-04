@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */; };
 		EA8DAE0D26E2891D00B6ACD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8DAE0C26E2891D00B6ACD5 /* Assets.xcassets */; };
 		EA8DAE1026E2891D00B6ACD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8DAE0E26E2891D00B6ACD5 /* LaunchScreen.storyboard */; };
+		EA8DAE1E26E343FA00B6ACD5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE1D26E343FA00B6ACD5 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EA8DAE0C26E2891D00B6ACD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA8DAE0F26E2891D00B6ACD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8DAE1126E2891D00B6ACD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8DAE1D26E343FA00B6ACD5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,6 @@
 				EA8DAE1726E28A3800B6ACD5 /* Application */,
 				EA8DAE1826E28A4600B6ACD5 /* Resources */,
 				EA8DAE1926E28A5D00B6ACD5 /* Scenes */,
-				EA8DAE1A26E28A6800B6ACD5 /* ViewModels */,
 				EA8DAE1B26E28A7000B6ACD5 /* Models */,
 				EA8DAE1C26E28A7500B6ACD5 /* Core */,
 			);
@@ -111,15 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */,
+				EA8DAE1D26E343FA00B6ACD5 /* HomeViewModel.swift */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		EA8DAE1A26E28A6800B6ACD5 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		EA8DAE1B26E28A7000B6ACD5 /* Models */ = {
@@ -252,6 +247,7 @@
 				EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */,
 				EA8DAE0426E2891C00B6ACD5 /* AppDelegate.swift in Sources */,
 				EA8DAE0626E2891C00B6ACD5 /* SceneDelegate.swift in Sources */,
+				EA8DAE1E26E343FA00B6ACD5 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
