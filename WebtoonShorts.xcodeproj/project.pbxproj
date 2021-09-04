@@ -14,6 +14,9 @@
 		EA8DAE0D26E2891D00B6ACD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8DAE0C26E2891D00B6ACD5 /* Assets.xcassets */; };
 		EA8DAE1026E2891D00B6ACD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8DAE0E26E2891D00B6ACD5 /* LaunchScreen.storyboard */; };
 		EA8DAE1E26E343FA00B6ACD5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE1D26E343FA00B6ACD5 /* HomeViewModel.swift */; };
+		EA8DAE2226E3457000B6ACD5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE2126E3457000B6ACD5 /* MainTabBarViewController.swift */; };
+		EA8DAE2526E346C900B6ACD5 /* ShortsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE2426E346C900B6ACD5 /* ShortsViewController.swift */; };
+		EA8DAE2726E346D900B6ACD5 /* ShortsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE2626E346D900B6ACD5 /* ShortsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		EA8DAE0F26E2891D00B6ACD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA8DAE1126E2891D00B6ACD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA8DAE1D26E343FA00B6ACD5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EA8DAE2126E3457000B6ACD5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		EA8DAE2426E346C900B6ACD5 /* ShortsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsViewController.swift; sourceTree = "<group>"; };
+		EA8DAE2626E346D900B6ACD5 /* ShortsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,9 @@
 		EA8DAE1926E28A5D00B6ACD5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */,
-				EA8DAE1D26E343FA00B6ACD5 /* HomeViewModel.swift */,
+				EA8DAE2026E3455B00B6ACD5 /* MainTabBar */,
+				EA8DAE1F26E3455200B6ACD5 /* Home */,
+				EA8DAE2326E346AD00B6ACD5 /* Shorts */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -129,6 +136,32 @@
 			children = (
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		EA8DAE1F26E3455200B6ACD5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */,
+				EA8DAE1D26E343FA00B6ACD5 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EA8DAE2026E3455B00B6ACD5 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE2126E3457000B6ACD5 /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		EA8DAE2326E346AD00B6ACD5 /* Shorts */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DAE2426E346C900B6ACD5 /* ShortsViewController.swift */,
+				EA8DAE2626E346D900B6ACD5 /* ShortsViewModel.swift */,
+			);
+			path = Shorts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8DAE2226E3457000B6ACD5 /* MainTabBarViewController.swift in Sources */,
 				EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */,
 				EA8DAE0426E2891C00B6ACD5 /* AppDelegate.swift in Sources */,
+				EA8DAE2726E346D900B6ACD5 /* ShortsViewModel.swift in Sources */,
+				EA8DAE2526E346C900B6ACD5 /* ShortsViewController.swift in Sources */,
 				EA8DAE0626E2891C00B6ACD5 /* SceneDelegate.swift in Sources */,
 				EA8DAE1E26E343FA00B6ACD5 /* HomeViewModel.swift in Sources */,
 			);
