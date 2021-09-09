@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ShortsViewController: UIViewController {
+final class ShortsViewController: UIViewController {
 
     
     // MARK: - Life cycles

@@ -7,11 +7,23 @@ target 'WebtoonShorts' do
 
   # Pods for WebtoonShorts
 
+  # Firebase
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Storage'
+  
   # Rx
   pod 'RxSwift'
   pod 'RxGesture'
 
   # UI
   pod 'SnapKit', '>=5.0.1'
+  
+  # Util
+  pod 'Alamofire'
+  pod 'SDWebImage'
+  pod 'Then'
 
 end
