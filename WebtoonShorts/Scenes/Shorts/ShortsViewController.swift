@@ -24,4 +24,10 @@ final class ShortsViewController: UIViewController {
     func setup() {
     }
 
+    /*
+        TODO:
+        1) 세로 collection view
+        2) 가로 컬렉션
+        3) 회차 목록 보러가기 뷰 -> navigation controller
+     */
 }

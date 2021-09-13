@@ -43,10 +43,10 @@ class ReadTableViewCell: UITableViewCell {
     
     func setData(urlString: String) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            StorageManager.shared.downloadURL(for: urlString) { result in
+            StorageManager.shared.downloadURL(for: urlString) { [weak self] result in
                 switch result {
                 case .success(let url):
-                    DispatchQueue.main.async {
+                    DispatchQueue.main.async { [weak self] in
                         guard let self = self else { return }
                         self.readImageView.sd_setImage(with: url, completed: nil)
                     }

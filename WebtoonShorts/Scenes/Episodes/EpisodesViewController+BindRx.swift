@@ -36,7 +36,7 @@ extension EpisodesViewController {
             .tapGesture()
             .when(.recognized)
             .subscribe(onNext: { [weak self] _ in
-                DispatchQueue.main.async {
+                DispatchQueue.main.async { [weak self] in
                     if self?.descriptionLabel.numberOfLines == 0 {
                         self?.descriptionLabel.numberOfLines = 1
                         self?.descriptionExpansionArrow.text = "⌵"

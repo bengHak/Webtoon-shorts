@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import Then
 import SDWebImage
+import Combine
 
 class ToonCollectionViewCell: UICollectionViewCell {
     
@@ -38,6 +39,8 @@ class ToonCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
     static let identifier = "ToonCollectionViewCell"
     
+    private var cancellable: AnyCancellable?
+    
     
     // MARK: - LifeCycles
     override init(frame: CGRect) {
@@ -47,6 +50,12 @@ class ToonCollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override public func prepareForReuse() {
+        super.prepareForReuse()
+        imageViewThumbnail.image = nil
+        cancellable?.cancel()
     }
     
     // MARK: - Helper
@@ -80,17 +89,31 @@ class ToonCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    private func showImage(image: UIImage?) {
+        imageViewThumbnail.image = image
+    }
+    
+    private func loadImage(for urlString: String) -> AnyPublisher<UIImage?, Never> {
+        return Just(urlString)
+            .flatMap({ poster -> AnyPublisher<UIImage?, Never> in
+                let url = URL(string: urlString)!
+                return ImageLoader.shared.loadImage(from: url)
+            })
+            .eraseToAnyPublisher()
+    }
+    
     func setData(with model: ModelToon, at index: Int) {
-        if model.thumbnailUrl == "" {
+        guard let thumbnailUrl = model.thumbnailUrl else {
             return
         }
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            StorageManager.shared.downloadURL(for: model.thumbnailUrl ?? "") { result in
+            StorageManager.shared.downloadURL(for: thumbnailUrl) { [weak self] result in
                 switch result {
                 case .success(let url):
-                    DispatchQueue.main.async {
-                        self?.imageViewThumbnail.sd_setImage(with: url, completed: nil)
-                    }
+                    self?.cancellable = self?.loadImage(for: url.absoluteString)
+                        .sink { [weak self] image in
+                            self?.showImage(image: image)
+                        }
                 case .failure(let error):
                     print("🔴 Failed to get thumbnail url: \(error)")
                 }

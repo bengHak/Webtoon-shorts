@@ -46,6 +46,8 @@
 		EA8DAE7926EA22CE00B6ACD5 /* ReadViewController+BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE7826EA22CE00B6ACD5 /* ReadViewController+BaseViewController.swift */; };
 		EA8DAE7B26EA711000B6ACD5 /* ReadViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE7A26EA711000B6ACD5 /* ReadViewController+UITableViewDelegate.swift */; };
 		EA8DAE7D26EA857300B6ACD5 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE7C26EA857300B6ACD5 /* UIImage+Ext.swift */; };
+		EA98D96B26EF9E6500FDE44B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98D96A26EF9E6500FDE44B /* ImageCache.swift */; };
+		EA98D96D26EF9FE500FDE44B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA98D96C26EF9FE500FDE44B /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +94,8 @@
 		EA8DAE7826EA22CE00B6ACD5 /* ReadViewController+BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReadViewController+BaseViewController.swift"; sourceTree = "<group>"; };
 		EA8DAE7A26EA711000B6ACD5 /* ReadViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReadViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		EA8DAE7C26EA857300B6ACD5 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		EA98D96A26EF9E6500FDE44B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		EA98D96C26EF9FE500FDE44B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 		EA8DAE1C26E28A7500B6ACD5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EA98D96726EF9CBD00FDE44B /* Utils */,
 				EA8DAE5926E64FE100B6ACD5 /* Firebase */,
 				EA8DAE3626E3DADE00B6ACD5 /* Enums */,
 				EA8DAE3326E3957400B6ACD5 /* Extensions */,
@@ -297,6 +302,15 @@
 				EA8DAE7026EA226400B6ACD5 /* ReadViewModel.swift */,
 			);
 			path = Read;
+			sourceTree = "<group>";
+		};
+		EA98D96726EF9CBD00FDE44B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA98D96A26EF9E6500FDE44B /* ImageCache.swift */,
+				EA98D96C26EF9FE500FDE44B /* ImageLoader.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +436,7 @@
 				EA8DAE3026E3945D00B6ACD5 /* BaseViewController.swift in Sources */,
 				EA8DAE3226E3947700B6ACD5 /* HomeViewController+BaseViewController.swift in Sources */,
 				EA8DAE3C26E478EC00B6ACD5 /* HomeViewController+BindViewModel.swift in Sources */,
+				EA98D96B26EF9E6500FDE44B /* ImageCache.swift in Sources */,
 				EA8DAE3E26E4794C00B6ACD5 /* HomeViewController+BindRx.swift in Sources */,
 				EA8DAE3A26E3E95600B6ACD5 /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
 				EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */,
@@ -439,6 +454,7 @@
 				EA8DAE0626E2891C00B6ACD5 /* SceneDelegate.swift in Sources */,
 				EA8DAE7326EA229400B6ACD5 /* ReadTableViewCell.swift in Sources */,
 				EA8DAE3526E3958E00B6ACD5 /* UIButton+Ext.swift in Sources */,
+				EA98D96D26EF9FE500FDE44B /* ImageLoader.swift in Sources */,
 				EA8DAE6626E871D300B6ACD5 /* EpisodesViewController+BindRx.swift in Sources */,
 				EA8DAE5F26E68EF300B6ACD5 /* CALayer+Ext.swift in Sources */,
 				EA8DAE7926EA22CE00B6ACD5 /* ReadViewController+BaseViewController.swift in Sources */,

@@ -83,10 +83,10 @@ class EpisodeTableViewCell: UITableViewCell {
     
     func setData(model: ModelEpisode) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            StorageManager.shared.downloadURL(for: model.thumbnailUrl ?? "") { result in
+            StorageManager.shared.downloadURL(for: model.thumbnailUrl ?? "") { [weak self] result in
                 switch result {
                 case .success(let url):
-                    DispatchQueue.main.async {
+                    DispatchQueue.main.async { [weak self] in
                         self?.imageViewThumbnail.sd_setImage(with: url, completed: nil)
                     }
                 case .failure(let error):

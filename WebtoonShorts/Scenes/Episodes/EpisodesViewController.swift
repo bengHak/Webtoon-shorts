@@ -92,10 +92,10 @@ class EpisodesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            StorageManager.shared.downloadURL(for: self?.toonInfo?.introImageUrl ?? "") { result in
+            StorageManager.shared.downloadURL(for: self?.toonInfo?.introImageUrl ?? "") { [weak self] result in
                 switch result {
                 case .success(let url):
-                    DispatchQueue.main.async {
+                    DispatchQueue.main.async { [weak self] in
                         self?.introImageView.sd_setImage(with: url, completed: nil)
                     }
                 case .failure(let error):
