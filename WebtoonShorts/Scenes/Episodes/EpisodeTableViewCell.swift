@@ -47,18 +47,20 @@ class EpisodeTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageViewThumbnail.sd_cancelCurrentImageLoad()
+        imageViewThumbnail.image = nil
+    }
+    
     // MARK: - Helper
     private func setUI() {
         [imageViewThumbnail, titleLabel, starPointLabel, uploadedDateLabel].forEach {
             contentView.addSubview($0)
         }
         
-        contentView.snp.makeConstraints {
-            $0.height.equalTo(80.0)
-        }
-        
         imageViewThumbnail.snp.makeConstraints {
-            $0.top.equalToSuperview()
+            $0.top.bottom.equalToSuperview()
             $0.leading.equalToSuperview().offset(10.0)
             $0.width.equalTo(90.0)
             $0.height.equalTo(80.0)

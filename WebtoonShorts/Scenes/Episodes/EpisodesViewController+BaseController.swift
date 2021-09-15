@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-extension EpisodesViewController: BaseViewController, UITableViewDelegate {
+extension EpisodesViewController: BaseViewController {
     
     func setUpView() {
         // 인트로 이미지 뷰
@@ -18,8 +18,9 @@ extension EpisodesViewController: BaseViewController, UITableViewDelegate {
         [titleLabel, writerLabel, dayLabel, descriptionLabel, descriptionExpansionArrow].forEach { scrollViewContentView.addSubview($0) }
         
         tableViewEpisodes = UITableView()
-        tableViewEpisodes.delegate = self
         tableViewEpisodes.backgroundColor = .systemBackground
+        tableViewEpisodes.estimatedRowHeight = 80
+        tableViewEpisodes.rowHeight = UITableView.automaticDimension
         tableViewEpisodes.register(EpisodeTableViewCell.self, forCellReuseIdentifier: EpisodeTableViewCell.identifier)
         scrollViewContentView.addSubview(tableViewEpisodes)
         
