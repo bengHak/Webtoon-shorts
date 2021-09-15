@@ -45,6 +45,10 @@ class ReadTableViewCell: UITableViewCell {
         
         readImageView.snp.makeConstraints {
             $0.edges.equalToSuperview()
+            let w = UIScreen.main.bounds.width
+            let h = Float(w) * Float((readImageView.image?.getImageRatio())!)
+            $0.width.equalTo(w)
+            $0.height.equalTo(h)
         }
     }
     
