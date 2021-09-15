@@ -88,7 +88,7 @@ class EpisodeTableViewCell: UITableViewCell {
             StorageManager.shared.downloadURL(for: model.thumbnailUrl ?? "") { [weak self] result in
                 switch result {
                 case .success(let url):
-                    DispatchQueue.main.async { [weak self] in
+                    DispatchQueue.main.async {
                         self?.imageViewThumbnail.sd_setImage(with: url, completed: nil)
                     }
                 case .failure(let error):

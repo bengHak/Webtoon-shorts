@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC1EC51AE6AB1D021105C9F7 /* Pods_WebtoonShorts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DED934F7F2D3543D0C96AB /* Pods_WebtoonShorts.framework */; };
+		EA6A4D9326F2683700C9DDF5 /* SignedUrlCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A4D9226F2683700C9DDF5 /* SignedUrlCache.swift */; };
 		EA8DAE0426E2891C00B6ACD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0326E2891C00B6ACD5 /* AppDelegate.swift */; };
 		EA8DAE0626E2891C00B6ACD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0526E2891C00B6ACD5 /* SceneDelegate.swift */; };
 		EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */; };
@@ -54,6 +55,7 @@
 		1D7686ACED4DCC3144E8C2CE /* Pods-WebtoonShorts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebtoonShorts.release.xcconfig"; path = "Target Support Files/Pods-WebtoonShorts/Pods-WebtoonShorts.release.xcconfig"; sourceTree = "<group>"; };
 		48DED934F7F2D3543D0C96AB /* Pods_WebtoonShorts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebtoonShorts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6DF6BCD222F057829D9F99 /* Pods-WebtoonShorts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebtoonShorts.debug.xcconfig"; path = "Target Support Files/Pods-WebtoonShorts/Pods-WebtoonShorts.debug.xcconfig"; sourceTree = "<group>"; };
+		EA6A4D9226F2683700C9DDF5 /* SignedUrlCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUrlCache.swift; sourceTree = "<group>"; };
 		EA8DAE0026E2891C00B6ACD5 /* WebtoonShorts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebtoonShorts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8DAE0326E2891C00B6ACD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8DAE0526E2891C00B6ACD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			children = (
 				EA98D96A26EF9E6500FDE44B /* ImageCache.swift */,
 				EA98D96C26EF9FE500FDE44B /* ImageLoader.swift */,
+				EA6A4D9226F2683700C9DDF5 /* SignedUrlCache.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				EA8DAE2726E346D900B6ACD5 /* ShortsViewModel.swift in Sources */,
 				EA8DAE2526E346C900B6ACD5 /* ShortsViewController.swift in Sources */,
 				EA8DAE4726E63DCE00B6ACD5 /* ModelToon.swift in Sources */,
+				EA6A4D9326F2683700C9DDF5 /* SignedUrlCache.swift in Sources */,
 				EA8DAE5D26E66F9500B6ACD5 /* StorageManager.swift in Sources */,
 				EA8DAE7726EA22BE00B6ACD5 /* ReadViewController+BindViewModel.swift in Sources */,
 				EA8DAE7126EA226400B6ACD5 /* ReadViewModel.swift in Sources */,

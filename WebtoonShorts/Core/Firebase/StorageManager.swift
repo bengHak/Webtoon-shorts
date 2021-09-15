@@ -15,13 +15,24 @@ final class StorageManager {
     private let storage = Storage.storage().reference()
     
     public func downloadURL(for path: String, completion: @escaping (Result<URL, Error>) -> Void) {
+        if let signedUrl = SignedUrlCache.shared.url(for: path) {
+            completion(.success(signedUrl))
+            print("🟢 Retrieve url cached -> \(path)")
+            return
+        }
+        
         let reference = storage.child(path)
         reference.downloadURL{ url, error in
             guard let url = url, error == nil else {
-                print(String(describing: error))
+                if !path.isEmpty {
+                    print(String(describing: error))
+                }
                 completion(.failure(StorageErrors.failedToGetDownloadUrl))
                 return
             }
+           
+            SignedUrlCache.shared.insertRelativePath(url, for: path)
+            print("🟢 url cached -> \(path)")
             completion(.success(url))
         }
     }

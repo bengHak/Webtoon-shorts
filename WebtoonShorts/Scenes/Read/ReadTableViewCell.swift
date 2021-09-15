@@ -31,6 +31,13 @@ class ReadTableViewCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        readImageView.sd_cancelCurrentImageLoad()
+        readImageView.image = nil
+        updateLayout()
+    }
 
     // MARK: - Helpers
     func setUI() {
@@ -41,14 +48,19 @@ class ReadTableViewCell: UITableViewCell {
         }
     }
     
+    func updateLayout(){
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
+    }
+    
+    // TODO: URL 가져오기 코드 ViewModel에 보내기
     func setData(urlString: String) {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            StorageManager.shared.downloadURL(for: urlString) { [weak self] result in
+            StorageManager.shared.downloadURL(for: urlString) { result in
                 switch result {
                 case .success(let url):
-                    DispatchQueue.main.async { [weak self] in
-                        guard let self = self else { return }
-                        self.readImageView.sd_setImage(with: url, completed: nil)
+                    DispatchQueue.main.async {
+                        self?.readImageView.sd_setImage(with: url, completed: nil)
                     }
                 case .failure(let error):
                     print("🔴 Failed to get download url: \(error)")

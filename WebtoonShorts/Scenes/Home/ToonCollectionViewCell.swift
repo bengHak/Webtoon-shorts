@@ -52,11 +52,13 @@ class ToonCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override public func prepareForReuse() {
+    override func prepareForReuse() {
         super.prepareForReuse()
+        imageViewThumbnail.sd_cancelCurrentImageLoad()
         imageViewThumbnail.image = nil
-        cancellable?.cancel()
+        updateLayout()
     }
+    
     
     // MARK: - Helper
     private func configureView() {
@@ -89,16 +91,21 @@ class ToonCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    func updateLayout(){
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
+    }
+    
     private func showImage(image: UIImage?) {
         imageViewThumbnail.image = image
     }
     
     private func loadImage(for urlString: String) -> AnyPublisher<UIImage?, Never> {
         return Just(urlString)
-            .flatMap({ poster -> AnyPublisher<UIImage?, Never> in
+            .flatMap{ poster -> AnyPublisher<UIImage?, Never> in
                 let url = URL(string: urlString)!
                 return ImageLoader.shared.loadImage(from: url)
-            })
+            }
             .eraseToAnyPublisher()
     }
     
@@ -106,15 +113,16 @@ class ToonCollectionViewCell: UICollectionViewCell {
         guard let thumbnailUrl = model.thumbnailUrl else {
             return
         }
-        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-            StorageManager.shared.downloadURL(for: thumbnailUrl) { [weak self] result in
-                switch result {
-                case .success(let url):
-                    self?.cancellable = self?.loadImage(for: url.absoluteString)
-                        .sink { [weak self] image in
-                            self?.showImage(image: image)
-                        }
-                case .failure(let error):
+        
+        StorageManager.shared.downloadURL(for: thumbnailUrl) { [weak self] result in
+            switch result {
+            case .success(let url):
+                self?.cancellable = self?.loadImage(for: url.absoluteString)
+                    .sink { image in
+                        self?.showImage(image: image)
+                    }
+            case .failure(let error):
+                if !thumbnailUrl.isEmpty {
                     print("🔴 Failed to get thumbnail url: \(error)")
                 }
             }
