@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BC1EC51AE6AB1D021105C9F7 /* Pods_WebtoonShorts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DED934F7F2D3543D0C96AB /* Pods_WebtoonShorts.framework */; };
 		EA6A4D9326F2683700C9DDF5 /* SignedUrlCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A4D9226F2683700C9DDF5 /* SignedUrlCache.swift */; };
+		EA8AA74126FDA9E500C446AA /* ShortsViewController+BindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8AA74026FDA9E500C446AA /* ShortsViewController+BindViewModel.swift */; };
+		EA8AA74326FDA9F600C446AA /* ShortsViewController+BindRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8AA74226FDA9F600C446AA /* ShortsViewController+BindRx.swift */; };
+		EA8AA74526FDAAD200C446AA /* ShortsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8AA74426FDAAD200C446AA /* ShortsCollectionViewCell.swift */; };
+		EA8AA74726FDAB4500C446AA /* ShortsViewController+BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8AA74626FDAB4500C446AA /* ShortsViewController+BaseViewController.swift */; };
 		EA8DAE0426E2891C00B6ACD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0326E2891C00B6ACD5 /* AppDelegate.swift */; };
 		EA8DAE0626E2891C00B6ACD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0526E2891C00B6ACD5 /* SceneDelegate.swift */; };
 		EA8DAE0826E2891C00B6ACD5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DAE0726E2891C00B6ACD5 /* HomeViewController.swift */; };
@@ -56,6 +60,10 @@
 		48DED934F7F2D3543D0C96AB /* Pods_WebtoonShorts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebtoonShorts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6DF6BCD222F057829D9F99 /* Pods-WebtoonShorts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebtoonShorts.debug.xcconfig"; path = "Target Support Files/Pods-WebtoonShorts/Pods-WebtoonShorts.debug.xcconfig"; sourceTree = "<group>"; };
 		EA6A4D9226F2683700C9DDF5 /* SignedUrlCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUrlCache.swift; sourceTree = "<group>"; };
+		EA8AA74026FDA9E500C446AA /* ShortsViewController+BindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShortsViewController+BindViewModel.swift"; sourceTree = "<group>"; };
+		EA8AA74226FDA9F600C446AA /* ShortsViewController+BindRx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShortsViewController+BindRx.swift"; sourceTree = "<group>"; };
+		EA8AA74426FDAAD200C446AA /* ShortsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA8AA74626FDAB4500C446AA /* ShortsViewController+BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShortsViewController+BaseViewController.swift"; sourceTree = "<group>"; };
 		EA8DAE0026E2891C00B6ACD5 /* WebtoonShorts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebtoonShorts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8DAE0326E2891C00B6ACD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA8DAE0526E2891C00B6ACD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,7 +246,11 @@
 		EA8DAE2326E346AD00B6ACD5 /* Shorts */ = {
 			isa = PBXGroup;
 			children = (
+				EA8AA74426FDAAD200C446AA /* ShortsCollectionViewCell.swift */,
 				EA8DAE2426E346C900B6ACD5 /* ShortsViewController.swift */,
+				EA8AA74626FDAB4500C446AA /* ShortsViewController+BaseViewController.swift */,
+				EA8AA74226FDA9F600C446AA /* ShortsViewController+BindRx.swift */,
+				EA8AA74026FDA9E500C446AA /* ShortsViewController+BindViewModel.swift */,
 				EA8DAE2626E346D900B6ACD5 /* ShortsViewModel.swift */,
 			);
 			path = Shorts;
@@ -430,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8AA74326FDA9F600C446AA /* ShortsViewController+BindRx.swift in Sources */,
 				EA8DAE7D26EA857300B6ACD5 /* UIImage+Ext.swift in Sources */,
 				EA8DAE5826E64FDD00B6ACD5 /* DatabaseManager.swift in Sources */,
 				EA8DAE2226E3457000B6ACD5 /* MainTabBarViewController.swift in Sources */,
@@ -439,6 +452,7 @@
 				EA8DAE3026E3945D00B6ACD5 /* BaseViewController.swift in Sources */,
 				EA8DAE3226E3947700B6ACD5 /* HomeViewController+BaseViewController.swift in Sources */,
 				EA8DAE3C26E478EC00B6ACD5 /* HomeViewController+BindViewModel.swift in Sources */,
+				EA8AA74126FDA9E500C446AA /* ShortsViewController+BindViewModel.swift in Sources */,
 				EA98D96B26EF9E6500FDE44B /* ImageCache.swift in Sources */,
 				EA8DAE3E26E4794C00B6ACD5 /* HomeViewController+BindRx.swift in Sources */,
 				EA8DAE3A26E3E95600B6ACD5 /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
@@ -465,9 +479,11 @@
 				EA8DAE6426E86FCE00B6ACD5 /* EpisodesViewController+BaseController.swift in Sources */,
 				EA8DAE2926E362C300B6ACD5 /* ToonCollectionViewCell.swift in Sources */,
 				EA8DAE6A26E8803200B6ACD5 /* EpisodesViewController+BindViewModel.swift in Sources */,
+				EA8AA74526FDAAD200C446AA /* ShortsCollectionViewCell.swift in Sources */,
 				EA8DAE6226E8607800B6ACD5 /* EpisodesViewController.swift in Sources */,
 				EA8DAE2D26E362D900B6ACD5 /* BannerCollectionViewCell.swift in Sources */,
 				EA8DAE1E26E343FA00B6ACD5 /* HomeViewModel.swift in Sources */,
+				EA8AA74726FDAB4500C446AA /* ShortsViewController+BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

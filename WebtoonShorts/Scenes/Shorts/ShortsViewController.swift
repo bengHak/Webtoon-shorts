@@ -7,9 +7,18 @@
 
 import UIKit
 import SnapKit
+import Then
 
 final class ShortsViewController: UIViewController {
 
+    // MARK: - UI Components
+    
+    let scrollView = UIScrollView().then {
+        $0.isPagingEnabled = true
+    }
+    
+    var shortsCollectionView: UICollectionView!
+    
     
     // MARK: - Life cycles
     override func viewDidLoad() {
@@ -30,4 +39,7 @@ final class ShortsViewController: UIViewController {
         2) 가로 컬렉션
         3) 회차 목록 보러가기 뷰 -> navigation controller
      */
+
+    
+    // MARK: - Helpers
 }
