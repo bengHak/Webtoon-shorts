@@ -117,6 +117,14 @@ extension DatabaseManager {
                                              thumbnailUrl: thumbnailUrl))
             }
             
+            episodes.sort {
+                guard let leftEpNum = $0.epNum,
+                      let rightEpNum = $1.epNum else {
+                          return false
+                      }
+                return leftEpNum < rightEpNum
+            }
+            
             completion(.success(episodes))
         }
     }
