@@ -78,7 +78,7 @@ extension DatabaseManager {
     /// Get episodes
     func getEpisodes(toonId: Int, completion: @escaping (Result<[ModelEpisode], Error>) -> Void) {
         print("🟢 fetching episodes")
-        database.collection("episodes").getDocuments() { (snapshot, error) in
+        database.collection("episodes").whereField("toonId", isEqualTo: toonId).getDocuments() { (snapshot, error) in
             if let error = error {
                 print("🔴 Error getting documents: \(error)")
                 completion(.failure(DatabaseError.failedToFetch))
@@ -101,10 +101,6 @@ extension DatabaseManager {
                     print("🔴 Failed to convert: \(data)")
                     completion(.failure(DatabaseError.failedToFetch))
                     return
-                }
-                
-                if toonId != tId {
-                    continue
                 }
                 
                 episodes.append(ModelEpisode(id: epId,
